@@ -18,7 +18,8 @@ const todoSchema = new Schema({
     type: Date,
   },
   hours : {
-    type : Number
+    type : Number,
+    default : 0
   },
   isDone: {
     type: Boolean,

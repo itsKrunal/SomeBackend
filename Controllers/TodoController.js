@@ -73,7 +73,7 @@ exports.updateTodo = async (req, res) => {
             const startTime = todo.startTime;
             const timeDiffMilliseconds = currentTime - startTime;
             const timeDiffHours = timeDiffMilliseconds / (1000 * 60 * 60); 
-            todo.hours = timeDiffHours;
+            todo.hours += timeDiffHours;
             todo.startTime = null;
             todo.isOngoing = false;
         }
